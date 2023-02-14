@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(134, 130, 130, 0.19);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    gap: 1em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    color:rgba(255, 74, 74, 0.929);
+}
+
+#todoInput {
+    padding: .5em 1em;
+    border: transparent;
+}
+
+#todoInputGroup button {
+    padding: .5em 1em;
+    background-color: transparent;
+    border: 1px solid rgb(85, 215, 85);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(85, 215, 85);
+
+}
+
+#todoInputGroup button:hover {
+    border: 1px solid rgb(85, 215, 85);
+    background-color: rgb(140, 239, 140);
+}
+
+#todoInputGroup button:active {
+    background-color: rgba(9, 138, 9, 0.846);
+}
+
+section#todoItemsContainer {
+    margin: 1em 0;
+    background-color: rgba(255, 255, 255, 1);
+    height: 250px;
+    padding: .5em;
+    overflow-y: scroll;
+}
+
+#todoItemsContainer article {
+    display: flex;
+    border: 1px solid rgba(204, 204, 204, 0.929);
+    padding: .5em 1em;
+    justify-content: space-between;
+    margin: .5em 0;
+}
+
+#todoItemsContainer article.completed .todoText {
+    color: rgba(204, 204, 204, 0.929);
+    text-decoration: line-through;
+}
+
+#todoItemsContainer article div.todoText {
+    display: flex;
+
+}
+
+#todoItemsContainer article p {
+    margin-right: .1em;
+    align-self: center;
+    cursor: pointer;
+    font-size: larger;
+}
+
+.markDone {
+    color: rgb(85, 215, 85);
+}
+.deleteTodo {
+    color: rgba(255, 0, 0, .5);
+}
